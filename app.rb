@@ -7,7 +7,12 @@ class Birthday < Sinatra::Base
   end
 
   get '/' do
-    'Hello World!'
+    erb :index
+  end
+
+  post '/birthday' do
+    p params
+    "Working on it..."
   end
 
   # start the server if ruby file executed directly
